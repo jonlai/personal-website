@@ -15,9 +15,30 @@ body {
     background: rgba(8, 128, 192, 1);
     border-bottom: solid 1px #eee;
 }
-.navbar-content{
+.navbar-content {
     height: 50px;
     width: 100%;
     max-width: 900px;
+    margin: 0 auto;
     color: white;
+}
+.navbar-tabs {
+    height: 50px;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-tabs li {
+    display: inline;
+    font-family: 'Source Sans Pro', Helvetica;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 15px 11px;
+}
+.navbar-tabs li:hover {
+    background: #6FB4D9;
+}
+.navbar-tabs li.active {
+    background: #6FB4D9;
 }
