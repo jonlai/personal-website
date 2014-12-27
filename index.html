@@ -8,16 +8,36 @@
         <script data-main="js/main" src="js/lib/require.js"></script>
     </head>
     <body>
-        <div class="navbar-container">
-            <div class="navbar-logo">
-            </div>
+        <div class="navbar">
             <div class="navbar-content">
-                <ul class="navbar-tabs">
-                    <li class="active">About</li>
-                    <li>Projects</li>
-                    <li>Resume</li>
-                    <li>Blog</li>
-                </ul>
+                <div class="navbar-logo">
+                    <a class="logo-button" href="#home">
+                        <img src="img/logo.svg"></img>
+                    </a>
+                    <a id="toggle-menu" class="menu-button mobile">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <ul class="navbar-tabs">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                    <ul class="navbar-tabs mobile">
+                        <li><a href="#github">Github</a></li>
+                        <li><a href="#linkedin">LinkedIn</a></li>
+                        <li><a href="#email">Mail</a></li>
+                    </ul>
+                    <ul class="navbar-tabs desktop pull-right">
+                        <li><a href="#github">Github</a></li>
+                        <li><a href="#linkedin">LinkedIn</a></li>
+                        <li><a href="#email">Mail</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </body>

@@ -7,20 +7,70 @@ html {
 body {
     background: url('../img/background.png') #252525;
 }
-.navbar-container {
-    height: 50px;
+@media(min-width: 769px) {
+    .mobile {
+        display: none !important;
+    }
+}
+@media(max-width: 768px) {
+    .desktop {
+        display: none !important;
+    }
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.navbar {
     width: 100%;
     position: fixed;
     top: 0;
     background: #0880C0;
-    border-bottom: solid 1px #eee;
+    border-bottom: solid 1px #999;
+}
+.navbar-logo {
+    display: inline-block;
+}
+.logo-button {
+    padding: 0 12px;
+}
+.logo-button > img {
+    vertical-align: middle;
+}
+.menu-button {
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+}
+.menu-button:hover {
+    background: none;
+}
+.menu-bar {
+    background: #DFDFDF;
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 30px;
+    border-radius: 3px;
+    margin: 6px 5px;
+}
+.navbar-menu {
+    display: inline-block;
+    width: calc(100% - 101px);
 }
 .navbar-content {
-    height: 50px;
     width: 100%;
+    padding: 0 20px;
     max-width: 900px;
     margin: 0 auto;
-    color: white;
+    font-size: 0;
+    color: #DFDFDF;
 }
 .navbar-tabs {
     height: 50px;
@@ -28,17 +78,48 @@ body {
     list-style-type: none;
     padding: 15px 0;
     margin: 0;
+    font-size: 0;
 }
 .navbar-tabs li {
     display: inline;
+}
+.navbar-tabs li > a {
+    padding: 15px 12px;
     font-family: 'Source Sans Pro', Helvetica;
+    text-decoration: none;
     font-weight: 300;
-    font-size: 15px;
-    padding: 15px 11px;
+    font-size: 16px;
+    color: #DFDFDF;
 }
-.navbar-tabs li:hover {
-    background: #6FB4D9;
+.navbar-tabs li > a.active, a:hover {
+    background: #519EC8;
 }
-.navbar-tabs li.active {
-    background: #6FB4D9;
+@media(max-width: 768px) {
+    .navbar-logo, .navbar-menu {
+        display: block;
+        width: 100%
+    }
+    .navbar-logo {
+        border-bottom: solid 1px #999;
+    }
+    .navbar-menu {
+        margin: 7px 0;
+    }
+    .logo-button > img {
+        padding: 10px;
+        margin-left: -10px;
+    }
+    .navbar-content {
+        padding: 0;
+    }
+    .navbar-tabs {
+        display: inline;
+    }
+    .navbar-tabs li, .navbar-tabs li > a {
+        display: block;
+    }
 }
+
+
+
+
