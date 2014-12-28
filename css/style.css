@@ -172,7 +172,7 @@ body {
 .splash-text {
     width: calc(100% - 40px);
     position: absolute;
-    bottom: calc(43% - 59px);
+    top: calc(57% - 59px);
 }
 .splash-header {
     width: 100%;
@@ -183,7 +183,7 @@ body {
     margin: 0;
 }
 .splash-blurb {
-    width: 100%;
+    display: inline;
     color: #EEEEEE;
     line-height: 1.2;
     font-size: 2.5em;
@@ -191,9 +191,10 @@ body {
 }
 @media(max-width: 768px) {
     .splash-text {
-        bottom: calc(69% - 59px);
+        top: calc(31% - 59px);
     }
     .splash-header, .splash-blurb {
+        display: block;
         text-align: center;
     }
 }
