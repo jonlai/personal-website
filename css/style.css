@@ -32,43 +32,48 @@ body {
 }
 .navbar-logo {
     display: inline-block;
+    vertical-align: bottom;
 }
 .logo-button {
-    padding: 0 12px;
+    display: inline-block;
+    padding: 10px 10px 10px 5px;
+    line-height: 0;
 }
-.logo-button, .logo-button > img {
-    vertical-align: middle;
+.logo-button > img {
+    display: inline-block;
+    height: 30px;
+    width: 75px;
 }
 .menu-button {
-    position: absolute;
     height: 30px;
     width: 40px;
-    cursor: pointer;
+    position: absolute;
     top: 10px;
     bottom: 10px;
     right: 10px;
+    cursor: pointer;
 }
-.menu-button:hover {
+.logo-button:hover, .menu-button:hover {
     background: none;
 }
 .menu-bar {
-    background: #DFDFDF;
-    position: relative;
     display: block;
     height: 2px;
     width: 30px;
     border-radius: 3px;
+    position: relative;
+    background: #DFDFDF;
     margin: 6px 5px;
 }
 .navbar-menu {
     display: inline-block;
-    width: calc(100% - 101px);
+    width: calc(100% - 90px);
 }
 .navbar-content {
     overflow: hidden;
     width: 100%;
-    padding: 0 20px;
     max-width: 900px;
+    padding: 0 20px;
     margin: 0 auto;
     font-size: 0;
     color: #DFDFDF;
@@ -82,34 +87,31 @@ body {
     }
 }
 .navbar-tabs {
-    height: 50px;
     display: inline-block;
-    list-style-type: none;
-    padding: 15px 0;
+    height: 50px;
+    padding: 0;
     margin: 0;
     font-size: 0;
+    list-style-type: none;
 }
 .navbar-tabs li {
-    display: inline;
+    display: inline-block;
 }
 .navbar-tabs li > a {
+    display: inline-block;
     padding: 15px 12px;
     font-family: 'Source Sans Pro', Helvetica;
     text-decoration: none;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     color: #DFDFDF;
 }
 .navbar-tabs li > a.active, a:hover {
     background: #519EC8;
 }
-.navbar-tabs.desktop {
-    padding: 0;
-}
 .navbar-tabs.desktop li > a {
-    display: inline-block;
-    line-height: 0;
     padding: 11px 5px;
+    line-height: 0;
 }
 .navbar-tabs.desktop li a > img {
     display: inline-block;
@@ -125,12 +127,11 @@ body {
     .navbar-logo {
         border-bottom: solid 1px #999;
     }
+    .logo-button {
+        padding-left: 12px;
+    }
     .navbar-menu {
         margin: 7px 0;
-    }
-    .logo-button > img {
-        padding: 10px;
-        margin-left: -10px;
     }
     .navbar-content {
         padding: 0;
