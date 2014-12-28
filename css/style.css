@@ -43,6 +43,7 @@ body {
     top: 0;
     background: #0880C0;
     border-bottom: solid 1px #999;
+    z-index: 10;
 }
 .navbar-content {
     overflow: hidden;
@@ -175,6 +176,7 @@ body {
     top: calc(57% - 59px);
 }
 .splash-header {
+    display: block;
     width: 100%;
     font-family: 'Lato', Helvetica;
     color: #EEEEEE;
@@ -183,19 +185,33 @@ body {
     margin: 0;
 }
 .splash-blurb {
-    display: inline;
+    display: block;
     color: #EEEEEE;
     line-height: 1.2;
     font-size: 2.5em;
     margin: 0;
 }
+.about-button {
+    display: inline-block;
+    background: #0880C0;
+    margin-top: 25px;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #EEEEEE;
+    border: 1px solid #999;
+}
 @media(max-width: 768px) {
     .splash-text {
         top: calc(31% - 59px);
-    }
-    .splash-header, .splash-blurb {
-        display: block;
         text-align: center;
+    }
+    .splash-header {
+        font-size: 3em;
+    }
+    .splash-blurb {
+        font-size: 1.5em;
     }
 }
 
