@@ -5,7 +5,14 @@ html {
     box-sizing: inherit;
 }
 body {
+    margin-top: 50px;
     background: url('../img/background.png') #252525;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
 }
 @media(min-width: 769px) {
     .mobile {
@@ -17,18 +24,24 @@ body {
         display: none !important;
     }
 }
-.pull-left {
-    float: left;
-}
-.pull-right {
-    float: right;
-}
+/*----------------------------------------------------------------------------*/
+/*---| Navigation bar |-------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
 .navbar {
     width: 100%;
     position: fixed;
     top: 0;
     background: #0880C0;
     border-bottom: solid 1px #999;
+}
+.navbar-content {
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-size: 0;
+    color: #DFDFDF;
 }
 .navbar-logo {
     display: inline-block;
@@ -53,9 +66,6 @@ body {
     right: 10px;
     cursor: pointer;
 }
-.logo-button:hover, .menu-button:hover {
-    background: none;
-}
 .menu-bar {
     display: block;
     height: 2px;
@@ -65,26 +75,12 @@ body {
     background: #DFDFDF;
     margin: 6px 5px;
 }
+.logo-button:hover, .menu-button:hover {
+    background: none;
+}
 .navbar-menu {
     display: inline-block;
     width: calc(100% - 90px);
-}
-.navbar-content {
-    overflow: hidden;
-    width: 100%;
-    max-width: 900px;
-    padding: 0 20px;
-    margin: 0 auto;
-    font-size: 0;
-    color: #DFDFDF;
-}
-@media(max-width: 768px) {
-    .navbar-content {
-        height: 50px;
-    }
-    .navbar-content.expanded {
-        height: 100%;
-    }
 }
 .navbar-tabs {
     display: inline-block;
@@ -103,23 +99,30 @@ body {
     font-family: 'Source Sans Pro', Helvetica;
     text-decoration: none;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 16px;
     color: #DFDFDF;
 }
 .navbar-tabs li > a.active, a:hover {
     background: #519EC8;
 }
 .navbar-tabs.desktop li > a {
-    padding: 11px 5px;
+    padding: 12px 5px;
     line-height: 0;
 }
 .navbar-tabs.desktop li a > img {
     display: inline-block;
-    height: 28px;
-    width: 28px;
+    height: 26px;
+    width: 26px;
     border-radius: 4px;
 }
 @media(max-width: 768px) {
+    .navbar-content {
+        height: 50px;
+        padding: 0;
+    }
+    .navbar-content.expanded {
+        height: 100%;
+    }
     .navbar-logo, .navbar-menu {
         display: block;
         width: 100%
@@ -133,9 +136,6 @@ body {
     .navbar-menu {
         margin: 7px 0;
     }
-    .navbar-content {
-        padding: 0;
-    }
     .navbar-tabs {
         display: inline;
     }
@@ -143,7 +143,3 @@ body {
         display: block;
     }
 }
-
-
-
-
