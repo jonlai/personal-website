@@ -5,6 +5,7 @@ function($      ,  _          ,  Backbone ,  HomeViewTemplate        ) {
 
         render: function() {
             this.$el.empty();
+            $('.navbar-content').removeClass('expanded');
 
             var pageTitle = 'Jon Lai | Home';
             var compiledTemplate = _.template(HomeViewTemplate);

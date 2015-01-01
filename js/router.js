@@ -41,7 +41,11 @@ function($      ,  _          ,  Backbone ,  View  ) {
             var href = $(this).attr('href');
             Backbone.history.navigate(href, true);
         });
-        
+
+        $('#toggle-menu').click(function() {
+            $('.navbar-content').toggleClass('expanded');
+        });
+
         return new AppRouter;
     }
 
