@@ -36,17 +36,23 @@ function($      ,  _          ,  Backbone ,  View  ) {
     });
 
     function initialize() {
-        $(document).on('click', 'a:not([data-bypass])', function(evt) {
-            evt.preventDefault();
-            var href = $(this).attr('href');
-            Backbone.history.navigate(href, true);
-        });
+        var appRouter = new AppRouter;
+        Backbone.history.start({ pushstate: true });
 
         $('#toggle-menu').click(function() {
             $('.navbar-content').toggleClass('expanded');
         });
 
-        return new AppRouter;
+        $(document).on('click', 'a', function(evt) {
+            if (this.host == location.host) {
+                evt.preventDefault();
+                var href = $(this).attr('href');
+
+                Backbone.history.navigate(href, true);
+            }
+        });
+
+        return appRouter;
     }
 
     return {
