@@ -116,19 +116,25 @@ body {
 .navbar-tabs li > a.active, a:hover {
     background: #519EC8;
 }
-.navbar-tabs.desktop li > a {
+.navbar-tabs.contact {
+    float: right;
+}
+.navbar-tabs.contact li > a {
     padding: 12px 5px;
     line-height: 0;
 }
-.navbar-tabs.desktop li a > img {
+.navbar-tabs.contact li a > img {
     display: inline-block;
     height: 26px;
     width: 26px;
     border-radius: 4px;
 }
 @media(max-width: 768px) {
+    .navbar {
+        border-bottom: none;
+    }
     .navbar-content {
-        height: 50px;
+        height: 51px;
         padding: 0;
     }
     .navbar-content.expanded {
@@ -144,14 +150,31 @@ body {
     .logo-button {
         padding-left: 12px;
     }
-    .navbar-menu {
-        margin: 7px 0;
-    }
     .navbar-tabs {
         display: inline;
+        text-align: center;
     }
     .navbar-tabs li, .navbar-tabs li > a {
         display: block;
+        font-size: 18px;
+    }
+    .navbar-tabs li:last-child {
+        border-bottom: 1px solid #999;
+    }
+    .navbar-tabs.contact {
+        float: none;
+    }
+    .navbar-tabs.contact li {
+        border-top: none;
+        border-bottom: none;
+        display: inline-block;
+        width: 33.3%;
+    }
+    .navbar-tabs.contact li:first-child {
+        border-right: 1px solid #999;
+    }
+    .navbar-tabs.contact li:last-child {
+        border-left: 1px solid #999;
     }
 }
 

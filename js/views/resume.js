@@ -6,6 +6,8 @@ function($      ,  _          ,  Backbone ,  ResumeViewTemplate        ) {
         render: function() {
             this.$el.empty();
             $('.navbar-content').removeClass('expanded');
+            $('.navbar-tabs.nav li > a').removeClass('active');
+            $('#nav-resume').addClass('active');
 
             var pageTitle = 'Jon Lai | Resume';
             var compiledTemplate = _.template(ResumeViewTemplate);

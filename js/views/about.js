@@ -6,6 +6,8 @@ function($      ,  _          ,  Backbone ,  AboutViewTemplate        ) {
         render: function() {
             this.$el.empty();
             $('.navbar-content').removeClass('expanded');
+            $('.navbar-tabs.nav li > a').removeClass('active');
+            $('#nav-about').addClass('active');
 
             var pageTitle = 'Jon Lai | About';
             var compiledTemplate = _.template(AboutViewTemplate);

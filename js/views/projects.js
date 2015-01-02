@@ -6,6 +6,8 @@ function($      ,  _          ,  Backbone ,  ProjectsViewTemplate        ) {
         render: function() {
             this.$el.empty();
             $('.navbar-content').removeClass('expanded');
+            $('.navbar-tabs.nav li > a').removeClass('active');
+            $('#nav-projects').addClass('active');
 
             var pageTitle = 'Jon Lai | Projects';
             var compiledTemplate = _.template(ProjectsViewTemplate);
