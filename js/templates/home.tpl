@@ -19,7 +19,7 @@
                 <h2 class="splash-blurb">
                     <span>I make </span><span id="items">web applications</span><span>.</span>
                 </h2>
-                <a class="about-button" href="about">About Me</a>
+                <a class="about-button" href="/about">About Me</a>
             </div>
         </div>
     </div>
