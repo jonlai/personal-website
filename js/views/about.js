@@ -13,6 +13,10 @@ function($      ,  _          ,  Backbone ,  AboutViewTemplate        ) {
             var compiledTemplate = _.template(AboutViewTemplate);
             $('head title').html(pageTitle);
             this.$el.html(compiledTemplate);
+            _.delay(function() {
+                $('#about-title').removeClass('hidden');
+            }, 50);
+            
         }
     });
 
