@@ -4,16 +4,22 @@ function($      ,  _          ,  Backbone ,  ErrorViewTemplate        ) {
         el: '#content',
 
         render: function() {
-            this.$el.empty();
-            $('.navbar-content').removeClass('expanded');
-            $('.navbar-tabs.nav li > a').removeClass('active');
-
-            var pageTitle = 'Jon Lai | Error';
             var compiledTemplate = _.template(ErrorViewTemplate);
-            $('head title').html(pageTitle);
+
+            this.$el.empty();
+            activePage('Error');
             this.$el.html(compiledTemplate);
+            $('.navbar-content').removeClass('animate expanded');
+            _.delay(function() {
+                $('.navbar-content').addClass('animate');
+            }, 50);
         }
     });
+
+    function activePage(name) {
+        $('.navbar-tabs.nav li > a').removeClass('active');
+        $('head title').html('Jon Lai | ' + name);
+    }
 
     return ErrorView;
 });

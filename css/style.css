@@ -51,7 +51,7 @@ body {
     top: 0;
     background: #0880C0;
     border-bottom: solid 1px #999;
-    z-index: 10;
+    z-index: 100;
 }
 .navbar-content {
     overflow: hidden;
@@ -142,6 +142,8 @@ body {
     .navbar-content {
         height: 51px;
         padding: 0;
+    }
+    .navbar-content.animate {
         transition: height 0.5s ease;
         -webkit-transition: height 0.5s ease;
     }
@@ -194,16 +196,44 @@ body {
     width: 100%;
     position: absolute;
     overflow: hidden;
+    z-index: 10;
+    opacity 1;
+    transition: all 0.65s ease-in-out;
+    -ms-transition: all 0.65s ease-in-out;
+    -moz-transition: all 0.65s ease-in-out;
+    -webkit-transition: all 0.65s ease-in-out;
 }
 .splash-half.top {
+    transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -webkit-transform-origin: 0 100%;
     top: 0;
 }
 .splash-half.bottom {
+    transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    -webkit-transform-origin: 100% 0;
     bottom: 0;
 }
 .splash-half.bottom > * {
     position: absolute;
     bottom: 0;
+}
+.splash-half.top.hidden {
+    transform: rotate(-90deg) scale(1.75) translate(-20%, -20%);
+    -ms-transform: rotate(-90deg) scale(1.75) translate(-20%, -20%);
+    -moz-transform: rotate(-90deg) scale(1.75) translate(-20%, -20%);
+    -webkit-transform: rotate(-90deg) scale(1.75) translate(-20%, -20%);
+    opacity: 0.6;
+}
+.splash-half.bottom.hidden {
+    transform: rotate(-90deg) scale(1.75) translate(20%, 20%);
+    -ms-transform: rotate(-90deg) scale(1.75) translate(20%, 20%);
+    -moz-transform: rotate(-90deg) scale(1.75) translate(20%, 20%);
+    -webkit-transform: rotate(-90deg) scale(1.75) translate(20%, 20%);
+    opacity: 0.6;
 }
 .splash-background {
     height: 200%;

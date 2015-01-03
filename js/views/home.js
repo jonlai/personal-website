@@ -4,16 +4,26 @@ function($      ,  _          ,  Backbone ,  HomeViewTemplate        ) {
         el: '#content',
 
         render: function() {
-            this.$el.empty();
-            $('.navbar-content').removeClass('expanded');
-            $('.navbar-tabs.nav li > a').removeClass('active');
-
-            var pageTitle = 'Jon Lai | Home';
             var compiledTemplate = _.template(HomeViewTemplate);
-            $('head title').html(pageTitle);
+            
+            this.$el.empty();
+            activePage('Home');
             this.$el.html(compiledTemplate);
+            $('.navbar-content').removeClass('animate expanded');
+            _.delay(function() {
+                $('.navbar-content').addClass('animate');
+            }, 50);
+
+            $('.about-button').click(function() {
+                $('.about-button').attr('data-splash', 'true');
+            });
         }
     });
+
+    function activePage(name) {
+        $('.navbar-tabs.nav li > a').removeClass('active');
+        $('head title').html('Jon Lai | ' + name);
+    }
 
     return HomeView;
 });

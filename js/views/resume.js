@@ -4,17 +4,24 @@ function($      ,  _          ,  Backbone ,  ResumeViewTemplate        ) {
         el: '#content',
 
         render: function() {
-            this.$el.empty();
-            $('.navbar-content').removeClass('expanded');
-            $('.navbar-tabs.nav li > a').removeClass('active');
-            $('#nav-resume').addClass('active');
-
-            var pageTitle = 'Jon Lai | Resume';
             var compiledTemplate = _.template(ResumeViewTemplate);
-            $('head title').html(pageTitle);
+
+            this.$el.empty();
+            activePage('Resume');
             this.$el.html(compiledTemplate);
+            $('.navbar-content').removeClass('animate expanded');
+            _.delay(function() {
+                $('.navbar-content').addClass('animate');
+            }, 50);
         }
     });
+
+    function activePage(name) {
+        var id = '#nav-' + name.toLowerCase();
+        $('.navbar-tabs.nav li > a').removeClass('active');
+        $(id).addClass('active');
+        $('head title').html('Jon Lai | ' + name);
+    }
 
     return ResumeView;
 });
