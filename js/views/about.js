@@ -21,9 +21,11 @@ function($      ,  _          ,  Backbone ,  AboutViewTemplate        ) {
     function emptyHTML() {
         if ($('.about-button').attr('data-splash') === 'true') {
             $('.splash-half').addClass('hidden');
+            $('.content').css('overflowY', 'hidden');
             _.delay(function() {
                 $('.splash-half').remove();
-            }, 750);
+                $('.content').removeAttr('style');
+            }, 800);
         } else {
             $('#content').empty();
         }
