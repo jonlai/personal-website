@@ -1,1 +1,1 @@
-<div>"Error" placeholder HTML</div>
+<div>Error</div>

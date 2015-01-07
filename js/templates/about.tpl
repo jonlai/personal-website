@@ -23,8 +23,8 @@
     </div>
     <span class="about-subtitle">Interests</span>
     <div class="about-body">
-        <p>I am an aspiring maker, interested in creating products with applicable uses &mdash; anything from a Chrome extension to a tangible word clock. I believe "making" is not limited to etc.</p>
-        <p>Portland consequat consectetur, food truck tempor exercitation chia. Nesciunt blog meditation, 8-bit aute banh mi cray actually labore. Before they sold out Helvetica sustainable, lumbersexual dreamcatcher banjo tilde viral.</p>
-        <p>Officia mollit stumptown pop-up. Mustache aesthetic mixtape, ut stumptown Brooklyn actually church-key dolore veniam fap. Non biodiesel wayfarers aliqua, deep v trust fund Shoreditch. Migas deserunt do.</p>
+        <p>I am an aspiring maker, interested in creating products that intersect design and functionality, both in the virtual and physical world. These projects can range anywhere from a Chrome extension to a physical word clock.</p>
+        <p>When I'm not coding, you may find me folding some modular origami or playing all types of games; I particularly enjoy Settlers of Catan and Super Smash Bros. right now. I also am an amateur foodie, and have a weakness for dark chocolate and coconut water.</p>
+        <p>In a past life, I was a water polo player and crossfitter. I still like to keep up-to-date with both activities, though.</p>
     </div>
 </div>

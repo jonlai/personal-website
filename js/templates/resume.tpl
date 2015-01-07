@@ -1,1 +1,1 @@
-<div>"Resume" placeholder HTML</div>
+<div></div>

@@ -1,1 +1,1 @@
-<div>"Projects" placeholder HTML</div>
+<div></div>

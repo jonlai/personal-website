@@ -380,6 +380,7 @@ body {
 .about-body {
     width: 100%;
     text-align: justify;
+    margin-bottom: 40px;
 }
 .about-body p {
     font-size: 18px;
