@@ -47,8 +47,11 @@ function($      ,  _          ,  Backbone ,  View  ) {
             if (this.host == location.host) {
                 evt.preventDefault();
                 var href = $(this).attr('href');
-
+                $('.navbar-content').removeClass('animate expanded');
                 Backbone.history.navigate(href, true);
+                _.delay(function() {
+                    $('.navbar-content').addClass('animate');
+                }, 50);
             }
         });
 

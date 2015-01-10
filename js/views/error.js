@@ -7,16 +7,12 @@ function($      ,  _          ,  Backbone ,  ErrorViewTemplate        ) {
             var compiledTemplate = _.template(ErrorViewTemplate);
 
             this.$el.empty();
-            activePage('Error');
+            setActivePage('Error');
             this.$el.html(compiledTemplate);
-            $('.navbar-content').removeClass('animate expanded');
-            _.delay(function() {
-                $('.navbar-content').addClass('animate');
-            }, 50);
         }
     });
 
-    function activePage(name) {
+    function setActivePage(name) {
         $('.navbar-tabs.nav li > a').removeClass('active');
         $('head title').html('Jon Lai | ' + name);
     }

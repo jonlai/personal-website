@@ -7,12 +7,8 @@ function($      ,  _          ,  Backbone ,  HomeViewTemplate        ) {
             var compiledTemplate = _.template(HomeViewTemplate);
             
             this.$el.empty();
-            activePage('Home');
+            setActivePage('Home');
             this.$el.html(compiledTemplate);
-            $('.navbar-content').removeClass('animate expanded');
-            _.delay(function() {
-                $('.navbar-content').addClass('animate');
-            }, 50);
 
             $('.about-button').click(function() {
                 $('.about-button').attr('data-splash', 'true');
@@ -20,7 +16,7 @@ function($      ,  _          ,  Backbone ,  HomeViewTemplate        ) {
         }
     });
 
-    function activePage(name) {
+    function setActivePage(name) {
         $('.navbar-tabs.nav li > a').removeClass('active');
         $('head title').html('Jon Lai | ' + name);
     }

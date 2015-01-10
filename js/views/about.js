@@ -8,11 +8,9 @@ function($      ,  _          ,  Backbone ,  AboutViewTemplate        ) {
 
             
             emptyHTML();
-            activePage('About');
+            setActivePage('About');
             this.$el.append(compiledTemplate);
-            $('.navbar-content').removeClass('animate expanded');
             _.delay(function() {
-                $('.navbar-content').addClass('animate');
                 $('#about-title').removeClass('hidden');
             }, 50);
         }
@@ -31,7 +29,7 @@ function($      ,  _          ,  Backbone ,  AboutViewTemplate        ) {
         }
     }
 
-    function activePage(name) {
+    function setActivePage(name) {
         var id = '#nav-' + name.toLowerCase();
         $('.navbar-tabs.nav li > a').removeClass('active');
         $(id).addClass('active');
