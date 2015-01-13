@@ -37,7 +37,6 @@ function($      ,  _          ,  Backbone ,  View  ) {
 
     function initialize() {
         var appRouter = new AppRouter;
-        Backbone.history.start({ pushstate: true });
 
         $('#toggle-menu').click(function() {
             $('.navbar-content').toggleClass('expanded');
