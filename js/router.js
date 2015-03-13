@@ -1,4 +1,4 @@
-define(['jquery', 'underscore', 'backbone', 'views'], 
+define(['jquery', 'underscore', 'backbone', 'views'],
 function($      ,  _          ,  Backbone ,  View  ) {
     var AppRouter = Backbone.Router.extend({
         routes: {
