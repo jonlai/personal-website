@@ -1,14 +1,14 @@
-define(['jquery', 'underscore', 'backbone', 'text!templates/about.tpl'], 
-function($      ,  _          ,  Backbone ,  AboutViewTemplate        ) {
-    var AboutView = Backbone.View.extend({ 
+define(['jquery', 'underscore', 'backbone', 'views/base', 'text!templates/about.tpl'],
+function($      ,  _          ,  Backbone ,  BaseView   ,  AboutViewTemplate        ) {
+    var AboutView = BaseView.extend({
         el: '#content',
 
         render: function() {
             var compiledTemplate = _.template(AboutViewTemplate);
 
-            
+
             emptyHTML();
-            setActivePage('About');
+            this.setActivePage('About');
             this.$el.append(compiledTemplate);
             _.delay(function() {
                 $('#about-title').removeClass('hidden');
@@ -27,13 +27,6 @@ function($      ,  _          ,  Backbone ,  AboutViewTemplate        ) {
         } else {
             $('#content').empty();
         }
-    }
-
-    function setActivePage(name) {
-        var id = '#nav-' + name.toLowerCase();
-        $('.navbar-tabs.nav li > a').removeClass('active');
-        $(id).addClass('active');
-        $('head title').html('Jon Lai | ' + name);
     }
 
     return AboutView;

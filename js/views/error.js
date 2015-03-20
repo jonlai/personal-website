@@ -1,21 +1,16 @@
-define(['jquery', 'underscore', 'backbone', 'text!templates/error.tpl'], 
-function($      ,  _          ,  Backbone ,  ErrorViewTemplate        ) {
-    var ErrorView = Backbone.View.extend({ 
+define(['jquery', 'underscore', 'backbone', 'views/base', 'text!templates/error.tpl'],
+function($      ,  _          ,  Backbone ,  BaseView   ,  ErrorViewTemplate        ) {
+    var ErrorView = BaseView.extend({
         el: '#content',
 
         render: function() {
             var compiledTemplate = _.template(ErrorViewTemplate);
 
             this.$el.empty();
-            setActivePage('Error');
+            this.setActivePage('Error');
             this.$el.html(compiledTemplate);
         }
     });
-
-    function setActivePage(name) {
-        $('.navbar-tabs.nav li > a').removeClass('active');
-        $('head title').html('Jon Lai | ' + name);
-    }
 
     return ErrorView;
 });

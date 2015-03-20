@@ -1,13 +1,13 @@
-define(['jquery', 'underscore', 'backbone', 'text!templates/home.tpl'], 
-function($      ,  _          ,  Backbone ,  HomeViewTemplate        ) {
-    var HomeView = Backbone.View.extend({ 
+define(['jquery', 'underscore', 'backbone', 'views/base', 'text!templates/home.tpl'],
+function($      ,  _          ,  Backbone ,  BaseView   ,  HomeViewTemplate        ) {
+    var HomeView = BaseView.extend({
         el: '#content',
 
         render: function() {
             var compiledTemplate = _.template(HomeViewTemplate);
-            
+
             this.$el.empty();
-            setActivePage('Home');
+            this.setActivePage('Home');
             this.$el.html(compiledTemplate);
 
             $('.about-button').click(function() {
@@ -15,11 +15,6 @@ function($      ,  _          ,  Backbone ,  HomeViewTemplate        ) {
             });
         }
     });
-
-    function setActivePage(name) {
-        $('.navbar-tabs.nav li > a').removeClass('active');
-        $('head title').html('Jon Lai | ' + name);
-    }
 
     return HomeView;
 });
