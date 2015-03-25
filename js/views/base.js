@@ -5,7 +5,7 @@ function($      ,  _          ,  Backbone ) {
             $('.navbar-tabs.nav li > a').removeClass('active');
             $('head title').html('Jon Lai | ' + name);
             var id = '#nav-' + name.toLowerCase();
-            if ($(id) != []) { $(id).addClass('active'); }
+            if ($(id) != []) $(id).addClass('active');
         }
     });
 
