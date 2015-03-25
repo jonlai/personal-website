@@ -223,17 +223,17 @@ body {
     bottom: 0;
 }
 .splash-half.top.hidden {
-    transform: translateZ(0) rotate(-90deg) scale(1.75) translate(-20%, -20%);
-    -ms-transform: translateZ(0) rotate(-90deg) scale(1.75) translate(-20%, -20%);
-    -moz-transform: translateZ(0) rotate(-90deg) scale(1.75) translate(-20%, -20%);
-    -webkit-transform: translateZ(0) rotate(-90deg) scale(1.75) translate(-20%, -20%);
+    transform: translateZ(0) rotate(-90deg) scale(2) translate(-50%, -150%);
+    -ms-transform: translateZ(0) rotate(-90deg) scale(2) translate(-50%, -150%);
+    -moz-transform: translateZ(0) rotate(-90deg) scale(2) translate(-50%, -150%);
+    -webkit-transform: translateZ(0) rotate(-90deg) scale(2) translate(-50%, -150%);
     opacity: 0.75;
 }
 .splash-half.bottom.hidden {
-    transform: translateZ(0) rotate(-90deg) scale(1.75) translate(20%, 20%);
-    -ms-transform: translateZ(0) rotate(-90deg) scale(1.75) translate(20%, 20%);
-    -moz-transform: translateZ(0) rotate(-90deg) scale(1.75) translate(20%, 20%);
-    -webkit-transform: translateZ(0) rotate(-90deg) scale(1.75) translate(20%, 20%);
+    transform: translateZ(0) rotate(-90deg) scale(2) translate(50%, 150%);
+    -ms-transform: translateZ(0) rotate(-90deg) scale(2) translate(50%, 150%);
+    -moz-transform: translateZ(0) rotate(-90deg) scale(2) translate(50%, 150%);
+    -webkit-transform: translateZ(0) rotate(-90deg) scale(2) translate(50%, 150%);
     opacity: 0.75;
 }
 .splash-background {
