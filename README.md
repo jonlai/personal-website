@@ -9,10 +9,10 @@ To run a local copy, `cd` to the root directory and run:
 python server.py
 ```
 This starts a local server for the directory. You can then view my site at
-the port 8000; you can change the port in `server.py` if you desire. I decided
-to use a python script instead of the default `SimpleHTTPServer` because I
-needed my local server to redirect to index.html if a file was not found instead
-of raising a 404 error. Backbone's router then handles all file paths.
+the port 8000; if you desire, you can change the port in `server.py`. The 
+default `SimpleHTTPServer` isn't adequate because the local server needs to 
+redirect to index if a file wasn't found. With the redirecting server script,
+Backbone's router can then handle all the file paths.
 
 ### Included 3rd Party Libraries
 
