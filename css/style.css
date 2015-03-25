@@ -199,10 +199,10 @@ body {
     overflow: hidden;
     z-index: 10;
     opacity 1;
-    transition: all 0.8s ease-in-out;
-    -ms-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
 .splash-half.top {
     transform-origin: 0 100%;
@@ -223,17 +223,17 @@ body {
     bottom: 0;
 }
 .splash-half.top.hidden {
-    transform: translateZ(0) rotate(-90deg) scale(2) translate(-50%, -150%);
-    -ms-transform: translateZ(0) rotate(-90deg) scale(2) translate(-50%, -150%);
-    -moz-transform: translateZ(0) rotate(-90deg) scale(2) translate(-50%, -150%);
-    -webkit-transform: translateZ(0) rotate(-90deg) scale(2) translate(-50%, -150%);
+    transform: translateZ(0) rotate(-90deg) scale(2.5) translate(-50%, -150%);
+    -ms-transform: translateZ(0) rotate(-90deg) scale(2.5) translate(-50%, -150%);
+    -moz-transform: translateZ(0) rotate(-90deg) scale(2.5) translate(-50%, -150%);
+    -webkit-transform: translateZ(0) rotate(-90deg) scale(2.5) translate(-50%, -150%);
     opacity: 0.75;
 }
 .splash-half.bottom.hidden {
-    transform: translateZ(0) rotate(-90deg) scale(2) translate(50%, 150%);
-    -ms-transform: translateZ(0) rotate(-90deg) scale(2) translate(50%, 150%);
-    -moz-transform: translateZ(0) rotate(-90deg) scale(2) translate(50%, 150%);
-    -webkit-transform: translateZ(0) rotate(-90deg) scale(2) translate(50%, 150%);
+    transform: translateZ(0) rotate(-90deg) scale(2.5) translate(50%, 150%);
+    -ms-transform: translateZ(0) rotate(-90deg) scale(2.5) translate(50%, 150%);
+    -moz-transform: translateZ(0) rotate(-90deg) scale(2.5) translate(50%, 150%);
+    -webkit-transform: translateZ(0) rotate(-90deg) scale(2.5) translate(50%, 150%);
     opacity: 0.75;
 }
 .splash-background {
