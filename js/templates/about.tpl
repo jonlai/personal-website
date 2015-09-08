@@ -7,18 +7,20 @@
     <div class="about-row">
         <div class="overview-column">
             <div>Name:<span class="stat-value">Jonathan Lai</span></div>
-            <div>Year:<span class="stat-value">Junior</span></div>
+            <div>Year:<span class="stat-value">Senior</span></div>
             <Div>Hometown:<span class="stat-value">Agoura, CA</span></div>
         </div>
         <div class="overview-column">
             <div>School:<span class="stat-value">UC Berkeley</span></div>
             <div>Major:<span class="stat-value">EECS</span></div>
-            <Div>Graduating:<span class="stat-value">Winter 2015</span></div>
+            <Div>Graduating:<span class="stat-value">May 2016</span></div>
         </div>
         <div class="overview-column">
-            <div>Editor:<span class="stat-value">VIM, Sublime</span></div>
+            <div>Editor:<span class="stat-value">VIM</span></div>
             <div>Browser:<span class="stat-value">Chrome</span></div>
-            <Div>Coffee:<span class="stat-value">Black</span></div>
+            <div>Coffee:<span class="stat-value">
+                <a href="http://www.ritualroasters.com/">Ritual</a>
+            </span></div>
         </div>
     </div>
     <span class="about-subtitle">Interests</span>

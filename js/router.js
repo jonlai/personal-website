@@ -43,7 +43,7 @@ function($      ,  _          ,  Backbone ,  View  ) {
         });
 
         $(document).on('click', 'a', function(evt) {
-            if (this.host == location.host) {
+            if (this.host == location.host && !this.pathname.match(/\.pdf$/)) {
                 evt.preventDefault();
                 var href = $(this).attr('href');
                 $('.navbar-content').removeClass('animate expanded');
