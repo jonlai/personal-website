@@ -1,30 +1,30 @@
 html {
+    box-sizing: border-box;
     font-family: 'Source Sans Pro', Helvetica;
     height: 100%;
     width: 100%;
-    box-sizing: border-box;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 body {
+    background: #252525;
     height: calc(100% - 50px);
     width: 100%;
     margin-top: 50px;
-    background: url('../img/background.png') #252525;
 }
 .content {
     color: #EEEEEE;
-    position: relative;
     height: 100%;
-    width: 100%;
     overflow-x: hidden;
+    position: relative;
+    width: 100%;
 }
 .container {
-    width: 100%;
+    margin: 0 auto;
     max-width: 700px;
     padding: 30px 20px;
-    margin: 0 auto;
+    width: 100%;
 }
 .pull-left {
     float: left;
@@ -43,25 +43,23 @@ body {
     }
 }
 
-/*----------------------------------------------------------------------------*/
 /*---| Navigation bar |-------------------------------------------------------*/
-/*----------------------------------------------------------------------------*/
 .navbar {
-    width: 100%;
-    position: fixed;
-    top: 0;
     background: #0880C0;
     border-bottom: solid 1px #999;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 100;
 }
 .navbar-content {
-    overflow: hidden;
-    width: 100%;
-    max-width: 900px;
-    padding: 0 20px;
-    margin: 0 auto;
-    font-size: 0;
     color: #EEEEEE;
+    font-size: 0;
+    margin: 0 auto;
+    max-width: 900px;
+    overflow: hidden;
+    padding: 0 20px;
+    width: 100%;
 }
 .navbar-logo {
     display: inline-block;
@@ -69,8 +67,8 @@ body {
 }
 .logo-button {
     display: inline-block;
-    padding: 10px 10px 10px 5px;
     line-height: 0;
+    padding: 10px 10px 10px 5px;
 }
 .logo-button > img {
     display: inline-block;
@@ -78,13 +76,13 @@ body {
     width: 75px;
 }
 .menu-button {
-    height: 30px;
-    width: 40px;
-    position: absolute;
-    top: 10px;
     bottom: 10px;
-    right: 10px;
     cursor: pointer;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
 }
 .menu-bar {
     display: block;

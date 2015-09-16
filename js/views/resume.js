@@ -1,4 +1,4 @@
-define(['jquery', 'underscore', 'backbone', 'views/base', 'text!templates/resume.tpl'],
+define(['jquery', 'underscore', 'backbone', 'views/base', 'text!templates/resume.html'],
 function($      ,  _          ,  Backbone ,  BaseView   ,  ResumeViewTemplate        ) {
     var ResumeView = BaseView.extend({
         el: '#content',

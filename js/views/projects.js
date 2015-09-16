@@ -1,4 +1,4 @@
-define(['jquery', 'underscore', 'backbone', 'views/base', 'text!templates/projects.tpl'],
+define(['jquery', 'underscore', 'backbone', 'views/base', 'text!templates/projects.html'],
 function($      ,  _          ,  Backbone ,  BaseView   ,  ProjectsViewTemplate        ) {
     var ProjectsView = BaseView.extend({
         el: '#content',

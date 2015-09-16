@@ -1,4 +1,4 @@
-define(['jquery', 'underscore', 'backbone', 'views/base', 'text!templates/error.tpl'],
+define(['jquery', 'underscore', 'backbone', 'views/base', 'text!templates/error.html'],
 function($      ,  _          ,  Backbone ,  BaseView   ,  ErrorViewTemplate        ) {
     var ErrorView = BaseView.extend({
         el: '#content',
